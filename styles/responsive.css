@@ -97,6 +97,9 @@
     .bottom-img {
         grid-template-columns: repeat(1, 1fr);
      }
+     .footer-container {
+        width: 90%;
+     }
 }
 @media screen and (max-width: 460px){
     .section-title {
@@ -111,4 +114,8 @@
     .banner .banner-content h2 {
         font-size: 1.5rem;
     }
+    .social-icon i {
+        font-size: 20px;
+        margin: 10px;
+     }
 }
