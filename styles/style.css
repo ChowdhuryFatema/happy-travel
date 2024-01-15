@@ -1,6 +1,6 @@
-/******************************
+/*************************************
             google font  
- ******************************/
+ *************************************/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,1000&display=swap');
 
 
@@ -8,21 +8,21 @@
     --orange: #FF5400;
 }
 
-/******************************
+/*************************************
             global styles 
- ******************************/
+ *************************************/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Mulish', sans-serif;
 }
-.section-margin {
-    margin-top: 80px;
+
+img {
+    max-width: 100%;
+    overflow: hidden;
 }
-.section-padding {
-    padding: 100px 0;
-}
+
 .container {
     width: 85%;
     max-width: 1440px;
@@ -30,9 +30,35 @@
     padding: 0px 20px;
 }
 
-/******************************
+.section-margin {
+    margin-top: 80px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-heading {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.section-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin: 20px 0;
+}
+
+/*************************************
             button styles 
- ******************************/
+ *************************************/
 .btn {
     color: #FFF;
     text-align: center;
@@ -45,9 +71,9 @@
     cursor: pointer;
 }
 
-/******************************
+/*************************************
             header styles 
- ******************************/
+ *************************************/
 
 .header-container {
     display: flex;
@@ -92,19 +118,22 @@
 .header-container .menu>ul>li>a:hover {
     color: var(--orange);
 }
+
 .navbar {
     display: flex;
     align-items: center;
 }
+
 .navbar img {
     width: 28px;
     height: 28px;
     display: none;
 }
-/******************************
+
+/**********************************
             banner styles 
- ******************************/
-.banner {
+ ***********************************/
+.banner-bg {
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../images/banner.png") no-repeat center center / cover;
     border-radius: 16px;
 }
@@ -133,10 +162,12 @@
     line-height: 1.625rem;
     margin: 15px 0;
 }
+
 .form-container {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
 }
+
 .banner-form {
     display: flex;
     flex: 1;
@@ -146,20 +177,45 @@
     gap: 1rem;
     margin-top: 40px;
 }
-.banner-form input, .banner-form select, .banner-form button {
+
+.banner-form input,
+.banner-form select,
+.banner-form button {
     width: 160px;
     height: 52px;
 }
-.banner-form input, .banner-form select {
+
+.banner-form input,
+.banner-form select {
     border-radius: 8px;
     background: #FFF;
     border: 0;
     outline: 0;
     padding: 0 10px;
 }
+
 .banner .banner-container button {
     display: flex;
     align-items: center;
     gap: 5px;
     justify-content: center;
+}
+
+/**********************************
+            tours styles 
+ **********************************/
+.tours-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.tour {
+    flex-basis: 48%;
+    margin: 10px 0;
+}
+
+.tours-container ul {
+    margin-left: 30px;
 }

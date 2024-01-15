@@ -1,4 +1,4 @@
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 992px) {
     .header-container {
         flex-direction: column;
     }
@@ -7,6 +7,12 @@
     }
     .banner .banner-container {
         width: 80%;
+    }
+    .tours-container {
+        flex-direction: column;
+    }
+    .tour {
+        flex-basis: 100%;
     }
 }
 @media screen and (max-width: 760px) {
@@ -18,6 +24,9 @@
     }
 }
 @media screen and (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
     .header-container {
         flex-direction: row;
     }
@@ -41,6 +50,9 @@
     }
 }
 @media screen and (max-width: 460px){
+    .section-title {
+        font-size: 1.5rem;
+    }
     .header-container .logo h2 {
         font-size: 1.5rem;
     }
