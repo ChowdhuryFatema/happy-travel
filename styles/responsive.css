@@ -1,0 +1,53 @@
+@media screen and (max-width: 960px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .banner .banner-content h2 {
+        font-size: 3.3rem;
+    }
+    .banner .banner-container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .banner .banner-content h2 {
+        font-size: 2.5rem;
+    }
+    .banner .banner-container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header-container {
+        flex-direction: row;
+    }
+    .header-container .logo {
+        margin-right: auto;
+    }
+    .header-container .logo h2 {
+        font-size: 2rem;
+    }
+    .header-container .menu {
+        display: none;
+    }
+    .navbar img {
+        display: block;
+    }
+    .banner .banner-content h2 {
+        font-size: 2rem;
+    }
+    .banner-form input, .banner-form select, .banner-form button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 460px){
+    .header-container .logo h2 {
+        font-size: 1.5rem;
+    }
+    .header-container .logo h2 img {
+        width: 40px;
+    }
+    .banner .banner-content h2 {
+        font-size: 1.5rem;
+    }
+}
