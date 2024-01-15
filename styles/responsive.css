@@ -23,9 +23,15 @@
         'destination-img-3 destination-img-3 destination-img-4 destination-img-4'
         'destination-img-5 destination-img-5 destination-img-5 destination-img-5';
     }
+    .destination-container .destination-img {
+        height: 250px;
+    }
     .destination-container .destination-img-5 {
         width: 60%;
         margin: 0 auto;
+    }
+    .service-content3 {
+        width: 70%;
     }
 
      
@@ -39,6 +45,13 @@
     }
     .banner .banner-container {
         width: 90%;
+    }
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-content3 {
+        width: 100%;
     }
 }
 @media screen and (max-width: 576px) {
