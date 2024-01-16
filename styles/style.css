@@ -1,7 +1,13 @@
 /*************************************
-            google font  
+          Mulish  google font  
  *************************************/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,1000&display=swap');
+
+/*************************************
+           Dancing google font  
+ *************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 
 :root {
@@ -77,6 +83,7 @@ img {
     border-radius: 8px;
     cursor: pointer;
     transition: .5s;
+    text-transform: capitalize;
 }
 
 .btn:hover {
@@ -211,6 +218,77 @@ img {
     align-items: center;
     gap: 5px;
     justify-content: center;
+}
+/**********************************
+            about styles 
+ **********************************/
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: url("../images/about-shape.svg") no-repeat left;
+}
+.about-sub-title {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: var(--orange);
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.about-sub-title::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: var(--orange);
+    top: 50%;
+    left: 115px;
+    position: absolute;
+}
+.about-sub-title .dot::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: var(--orange);
+    top: 50%;
+    left: 160px;
+    position: absolute;
+}
+.about-sub-title .dot::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: var(--orange);
+    top: 50%;
+    left: 175px;
+    position: absolute;
+}
+.about-img {
+    flex-basis: 40%;
+}
+.about-content {
+    flex-basis: 48%;
+}
+.about-container .about-img img {
+    border-radius: 20px;
+}
+.about-container .about-img {
+    position: relative;
+}
+.about-container .about-img .about-single-img {
+    right: -80px;
+    top: 35%;
+    position: absolute;
+    border: 10px solid #fff;
+    border-radius: 30px;
+}
+.about-single, .about-info {
+    display: flex;
+    gap: 15px;
+}
+.about-single img {
+    width: 150px;
 }
 
 /**********************************
@@ -369,6 +447,10 @@ img {
 }
 .newsletter-img {
     position: relative;
+}
+.newsletter-img img {
+    width: 100%;
+    height: 100%;
 }
 .newsletter-btn {
     position: absolute;

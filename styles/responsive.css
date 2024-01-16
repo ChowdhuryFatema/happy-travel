@@ -11,6 +11,15 @@
     .banner .banner-container {
         width: 80%;
     }
+    .about-container {
+        flex-direction: column;
+    }
+    .about-container .about-img .about-single-img {
+        right: 2%;
+    }
+    .about-content {
+        margin: 30px 0;
+    }
     .tours-container {
         flex-direction: column;
     }
@@ -83,6 +92,20 @@
     }
     .banner-form input, .banner-form select, .banner-form button {
         width: 100%;
+    }
+    
+    .about-container .about-img .about-single-img {
+        width: 70%;
+        right: -10%;
+    }
+    .about-single, .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content .about-button {
+        text-align: center;
+        margin: 20px auto;
+        width: 90%;
     }
     .destination-container {
         grid-template-areas: 
