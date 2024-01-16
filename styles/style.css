@@ -85,6 +85,7 @@ img {
     transition: .5s;
     text-transform: capitalize;
     position: relative;
+    overflow: hidden;
 }
 
 .btn span {
@@ -471,7 +472,6 @@ img {
     padding: 50px;
     border-radius: 16px;
     margin: 30px 0;
-    
 }
 .discount-bg  {
     background: url("../images/discount.png") no-repeat center center / cover;
@@ -530,6 +530,9 @@ img {
 
 .place-video {
     width: 55%;
+}
+.place-video video[poster] {
+    border-radius: 20px;
 }
 
 .place-video video {
@@ -611,6 +614,10 @@ img {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-transform: capitalize;
+}
+.footer .logo h2 span {
+    color: var(--orange);
 }
 
 .social-icon i {
