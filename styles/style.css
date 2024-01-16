@@ -77,17 +77,51 @@ img {
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
-    background-color: var(--orange);
+    background-color: #fc7f03;
     border: 0;
     padding: 15px 25px;
     border-radius: 8px;
     cursor: pointer;
     transition: .5s;
     text-transform: capitalize;
+    position: relative;
 }
 
-.btn:hover {
-    background-color: #cc4501;
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn::after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--orange);
+    position: absolute;
+    border-radius: 8px 0 0 8px;
+    transition: 1s;
+}
+.btn::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--orange);
+    position: absolute;
+    border-radius: 0 8px 8px 0;
+    transition: 1s;
+}
+
+.btn:hover::after {
+    width: 0;
+    height: 0;
+}
+.btn:hover::before {
+    width: 0;
+    height: 0;
 }
 
 /*************************************
@@ -213,7 +247,7 @@ img {
     padding: 0 10px;
 }
 
-.banner .banner-container button {
+.banner .banner-container button span {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -582,8 +616,11 @@ img {
 .social-icon i {
     font-size: 24px;
     margin: 15px;
+    transition: .7s;
 }
-
+.social-icon i:hover {
+   color: var(--orange);
+}
 .bottom-footer {
     margin: 30px 0;
     padding-top: 30px;
