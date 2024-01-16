@@ -40,11 +40,12 @@
         width: 60%;
         margin: 0 auto;
     }
+    
+    .discount-container {
+        padding-top: 250px;
+    }
     .service-content3 {
         width: 70%;
-    }
-    .discount-container {
-        padding: 10px;
     }
     .discount-card {
         width: 100%;
@@ -82,9 +83,6 @@
     }
     .service-content3 {
         width: 100%;
-    }
-    .discount-container {
-        padding-top: 250px;
     }
     .discount-card {
         width: 100%;
@@ -151,6 +149,9 @@
     }
     .destination-container .destination-img p {
         font-size: 1.2rem;
+    }
+    .discount-container {
+        padding: 250px 10px 10px 10px ;
     }
     .bottom-img {
         grid-template-columns: repeat(1, 1fr);
