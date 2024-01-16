@@ -147,7 +147,8 @@
         width: 100%;
         margin: 0 auto;
     }
-    .destination-container .destination-img p {
+    .destination-container .destination-img p, 
+    .bottom-img .destination-img p {
         font-size: 1.2rem;
     }
     .discount-container {
