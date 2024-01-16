@@ -22,6 +22,7 @@
     }
     .tours-container {
         flex-direction: column;
+        margin: 0px;
     }
     .tour {
         flex-basis: 100%;
@@ -48,6 +49,12 @@
      
 }
 @media screen and (max-width: 760px) {
+    .section-margin {
+        margin-top: 30px;
+    }
+    .container {
+        width: 90%;
+    }
     .section-heading {
         width: 100%;
     }
@@ -107,6 +114,10 @@
         margin: 20px auto;
         width: 90%;
     }
+    .about-single img {
+        width: 100px;
+    }
+    
     .destination-container {
         grid-template-areas: 
         'destination-img-1 destination-img-1 destination-img-1 destination-img-1'
