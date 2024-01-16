@@ -219,6 +219,7 @@ img {
     gap: 5px;
     justify-content: center;
 }
+
 /**********************************
             about styles 
  **********************************/
@@ -229,6 +230,7 @@ img {
     gap: 20px;
     background: url("../images/about-shape.svg") no-repeat left;
 }
+
 .about-sub-title {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
@@ -237,6 +239,7 @@ img {
     margin-bottom: 30px;
     position: relative;
 }
+
 .about-sub-title::after {
     content: '';
     width: 40px;
@@ -246,6 +249,7 @@ img {
     left: 115px;
     position: absolute;
 }
+
 .about-sub-title .dot::after {
     content: '';
     width: 10px;
@@ -255,6 +259,7 @@ img {
     left: 160px;
     position: absolute;
 }
+
 .about-sub-title .dot::before {
     content: '';
     width: 10px;
@@ -264,18 +269,23 @@ img {
     left: 175px;
     position: absolute;
 }
+
 .about-img {
     flex-basis: 40%;
 }
+
 .about-content {
     flex-basis: 48%;
 }
+
 .about-container .about-img img {
     border-radius: 20px;
 }
+
 .about-container .about-img {
     position: relative;
 }
+
 .about-container .about-img .about-single-img {
     right: -80px;
     top: 35%;
@@ -283,10 +293,13 @@ img {
     border: 10px solid #fff;
     border-radius: 30px;
 }
-.about-single, .about-info {
+
+.about-single,
+.about-info {
     display: flex;
     gap: 15px;
 }
+
 .about-single img {
     width: 150px;
 }
@@ -418,6 +431,30 @@ img {
 }
 
 /****************************************
+            projects styles 
+ ****************************************/
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projects-content ul li {
+    color: #131318;
+}
+.projects-content {
+    width: 40%;
+}
+
+.place-video {
+    width: 55%;
+}
+
+.place-video video {
+    width: 100%;
+}
+
+/****************************************
             newsletter styles 
  ****************************************/
 .newsletter-container {
@@ -432,10 +469,13 @@ img {
     padding: 30px;
     padding-top: 50px;
 }
+
 .newsletter-content .newsletter-form {
     margin-top: 30px;
 }
-.newsletter-content input, .newsletter-content button {
+
+.newsletter-content input,
+.newsletter-content button {
     display: block;
     width: 100%;
     border: 0;
@@ -443,22 +483,27 @@ img {
     padding: 15px 20px;
     margin-top: 15px;
 }
+
 .newsletter-content input {
     background: rgba(19, 19, 24, 0.05);
 }
+
 .newsletter-img {
     position: relative;
 }
+
 .newsletter-img img {
     width: 100%;
     height: 100%;
 }
+
 .newsletter-btn {
     position: absolute;
     bottom: 40px;
     right: 0;
     transform: rotate(-25deg);
 }
+
 .newsletter-btn button {
     padding: 15px 40px;
     border-radius: 15px;
