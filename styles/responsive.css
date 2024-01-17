@@ -56,12 +56,10 @@
     .projects-content, .place-video {
         width: 100%;
     }
-    .newsletter-container {
-        flex-direction: column;
-    }
+   
      
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 790px) {
     .section-margin {
         margin-top: 30px;
     }
@@ -88,8 +86,11 @@
         width: 100%;
         padding: 20px;
     }
+    .newsletter-container {
+        flex-direction: column;
+    }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .section-title {
         font-size: 2rem;
     }
